@@ -1,192 +1,43 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>物置</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-<!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>物置</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"><img src="icon.png" width="30" height="30" alt=""> 物置</a>
+    </nav>
+    <div class="container">
 
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <ul class="nav navbar-nav navbar-right">
-      <li>
-        <a href="https://twitter.com/ak11">Twitter</a>
-      </li>
-      <li>
-        <a href="https://github.com/ak110">GitHub</a>
-      </li>
-      <li>
-        <a href="https://gist.github.com/ak110">Gist</a>
-      </li>
-      <li>
-        <a href="http://qiita.com/ak11">Qiita</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-<div class="page-header" style="margin-top: 0;">
-  <div class="container">
-    <h1>物置</h1>
-  </div>
-</div>
+      <div class="row">
+        <div class="offset-md-1 col-md-8">
+          <ul class="list-group mt-5">
+            <li class="list-group-item">
+              <a href="https://twitter.com/ak11">Twitter</a>
+            </li>
+            <li class="list-group-item">
+              <a href="https://github.com/ak110">GitHub</a>
+            </li>
+            <li class="list-group-item">
+              <a href="http://qiita.com/ak11">Qiita</a>
+            </li>
+            <li class="list-group-item">
+              <a href="https://signate.jp/users/5350">SIGNATE</a>
+            </li>
+            <li class="list-group-item">
+              <a href="https://www.kaggle.com/ak1100">Kaggle</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md"></div>
+      </div>
 
-<div class="container">
-
-  <table class="table" style="word-break: break-all;">
-    <caption>比較的一般的なツールなど</caption>
-    <thead>
-      <tr>
-        <th>名前</th>
-        <th>概要</th>
-        <th style="width: 230px;"></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Blunder.Converter</td>
-        <td>棋譜変換ツール。</td>
-        <td class="text-right">
-          <div class="btn-group btn-group-sm" role="group">
-            <a class="btn btn-default" href="https://github.com/ak110/Blunder.Converter/releases">ダウンロード<span class="glyphicon glyphicon-link"></span></a>
-            <a class="btn btn-default" href="https://github.com/ak110/Blunder.Converter">リポジトリ<span class="glyphicon glyphicon-link"></span></a>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>WTester</td>
-        <td>勝敗数から勝率や有意確率などを計算するためのツール。</td>
-        <td class="text-right">
-          <div class="btn-group btn-group-sm" role="group">
-            <a class="btn btn-default" href="https://github.com/ak110/WTester/releases">ダウンロード<span class="glyphicon glyphicon-link"></span></a>
-            <a class="btn btn-default" href="https://github.com/ak110/WTester">リポジトリ<span class="glyphicon glyphicon-link"></span></a>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>ShogiBoard</td>
-        <td>USI対応のGUI。エンジン同士の対局とか通信対局とか検討とか。人間が指す機能はまだ(?)ありません。</td>
-        <td class="text-right">
-          <div class="btn-group btn-group-sm" role="group">
-            <a class="btn btn-default" href="https://github.com/ak110/ShogiBoard/releases">ダウンロード<span class="glyphicon glyphicon-link"></span></a>
-            <a class="btn btn-default" href="https://github.com/ak110/ShogiBoard">リポジトリ<span class="glyphicon glyphicon-link"></span></a>
-          </div>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-  <table class="table" style="word-break: break-all;">
-    <caption>やや怪しいツールなど</caption>
-    <thead>
-      <tr>
-        <th>名前</th>
-        <th>概要</th>
-        <th style="width: 230px;"></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>USIGameRunner</td>
-        <td>USIエンジン同士の連続対局をするRubyスクリプト</td>
-        <td class="text-right">
-          <div class="btn-group btn-group-sm" role="group">
-            <a class="btn btn-default" href="https://github.com/ak110/USIGameRunner">リポジトリ<span class="glyphicon glyphicon-link"></span></a>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>FolderToZip</td>
-        <td>フォルダをZIP圧縮するだけのコマンドラインツール。(.NET 4.5)</td>
-        <td class="text-right">
-          <div class="btn-group btn-group-sm" role="group">
-            <a class="btn btn-default" href="https://github.com/ak110/FolderToZip/blob/master/FolderToZip.exe?raw=true">ダウンロード<span class="glyphicon glyphicon-download-alt"></span></a>
-            <a class="btn btn-default" href="https://github.com/ak110/FolderToZip">リポジトリ<span class="glyphicon glyphicon-link"></span></a>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>SFENFileCleaner</td>
-        <td>1行毎に1つのsfenが記述されたファイルについて、ソートと重複の排除を行うコマンドラインツール。</td>
-        <td class="text-right">
-          <div class="btn-group btn-group-sm" role="group">
-            <a class="btn btn-default" href="https://github.com/ak110/SFENFileCleaner/blob/master/Binary/SFENFileCleaner.exe?raw=true">ダウンロード<span class="glyphicon glyphicon-download-alt"></span></a>
-            <a class="btn btn-default" href="https://github.com/ak110/SFENFileCleaner">リポジトリ<span class="glyphicon glyphicon-link"></span></a>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>MergeFV</td>
-        <td>重みファイルの重み付き加算を行うプログラム</td>
-        <td class="text-right">
-          <div class="btn-group btn-group-sm" role="group">
-            <a class="btn btn-default" href="https://github.com/ak110/MergeFV/releases">ダウンロード<span class="glyphicon glyphicon-link"></span></a>
-            <a class="btn btn-default" href="https://github.com/ak110/MergeFV">リポジトリ<span class="glyphicon glyphicon-link"></span></a>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>FVAnalyzer</td>
-        <td>fv.binなどの統計情報を表示したりするツール</td>
-        <td class="text-right">
-          <div class="btn-group btn-group-sm" role="group">
-            <a class="btn btn-default" href="https://github.com/ak110/FVAnalyzer/blob/master/Binary/FVAnalyzer.exe?raw=true">ダウンロード<span class="glyphicon glyphicon-download-alt"></span></a>
-            <a class="btn btn-default" href="https://github.com/ak110/FVAnalyzer">リポジトリ<span class="glyphicon glyphicon-link"></span></a>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>Blunder.BookEditor</td>
-        <td>Blunder(C#版、C++版)の定跡編集ツール。</td>
-        <td class="text-right">
-          <div class="btn-group btn-group-sm" role="group">
-            <a class="btn btn-default" href="https://github.com/ak110/Blunder.BookEditor/releases">ダウンロード<span class="glyphicon glyphicon-link"></span></a>
-            <a class="btn btn-default" href="https://github.com/ak110/Blunder.BookEditor">リポジトリ<span class="glyphicon glyphicon-link"></span></a>
-          </div>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-
-  <table class="table" style="word-break: break-all;">
-    <caption>
-      コンピュータ将棋エンジン Blunder
-      <small style="margin-left: 4em;">※ USI対応GUI(<a href="http://www.geocities.jp/shogidokoro/">将棋所</a>や<a href="http://www.geocities.jp/shogi_depot/">USI将棋</a>や<a href="https://sites.google.com/site/shogixyz/home/shogigui">ShogiGUI</a>など)が必要です。</small>
-    </caption>
-    <thead>
-      <tr>
-        <th>名前</th>
-        <th>概要</th>
-        <th style="width: 230px;"></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>BlunderXX-20130508</td>
-        <td>64bit版のWindows7以降用</td>
-        <td class="text-right">
-          <div class="btn-group btn-group-sm" role="group">
-            <a class="btn btn-default" href="https://www.dropbox.com/s/dd1z3vvnv1n0mez/BlunderXX-20130508-Binary.zip">バイナリ<span class="glyphicon glyphicon-download-alt"></span></a>
-            <a class="btn btn-default" href="https://www.dropbox.com/s/iesp6qv1t19bgyq/BlunderXX-20130508-Source.7z">ソースコード<span class="glyphicon glyphicon-download-alt"></span></a>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>BlunderXX-20120506</td>
-        <td>64bit版のWindows用</td>
-        <td class="text-right">
-          <div class="btn-group btn-group-sm" role="group">
-            <a class="btn btn-default" href="https://www.dropbox.com/s/7ljbbv4p9i7x00l/BlunderXX-20120506-Binary.zip">バイナリ<span class="glyphicon glyphicon-download-alt"></span></a>
-            <a class="btn btn-default" href="https://www.dropbox.com/s/5txc0oapcsyrwwd/BlunderXX-20120506-Source.zip">ソースコード<span class="glyphicon glyphicon-download-alt"></span></a>
-          </div>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
