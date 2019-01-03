@@ -1,0 +1,3 @@
+[submodule "keras_eta_estimator"]
+	path = keras_eta_estimator
+	url = ../keras_eta_estimator
